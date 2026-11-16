@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayloy</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="ayloy-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="products.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body data-page="home">
+
+    <!-- The large logo moves into the navigation bar while scrolling. -->
+    <section class="intro" id="intro" aria-label="Ayloy">
+        <div class="intro-band intro-band-top"></div>
+
+        <a class="brand" href="#intro" aria-label="Ayloy açılış ekranı">
+            <img src="ayloy.png" alt="Ayloy">
+        </a>
+
+        <div class="intro-band intro-band-bottom"></div>
+    </section>
+
+    <header class="site-header">
+        <nav class="navigation" aria-label="Ana menü">
+            <a class="nav-link" data-section="home" href="#home">
+                Anasayfa
+            </a>
+
+            <a class="nav-link" data-section="purpose" href="#purpose">
+                Amaç
+            </a>
+
+            <!-- The moving logo occupies this space. -->
+            <div class="brand-slot"></div>
+
+            <div class="products-menu">
+                <button
+                    class="nav-link products-toggle"
+                    data-section="products"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="products-dropdown">
+                    Ürünler
+                </button>
+
+                <div class="dropdown" id="products-dropdown" hidden>
+                    <details class="menu-group">
+                        <summary>Üst ürünler</summary>
+                        <a href="upper.html">Tüm üst ürünler</a>
+                        <a href="upper.html#jackets">Ceket</a>
+                        <a href="upper.html#sweatshirts">Sweatshirt</a>
+                        <a href="upper.html#tshirts">Tişört</a>
+                        <a href="upper.html#shirts">Gömlek</a>
+                    </details>
+
+                    <details class="menu-group">
+                        <summary>Alt ürünler</summary>
+                        <a href="lower.html">Tüm alt ürünler</a>
+                        <a href="lower.html#pants">Pantolon</a>
+                        <a href="lower.html#shorts">Şort</a>
+                    </details>
+
+                    <a class="dropdown-link" href="accessories.html">
+                        Aksesuar
+                    </a>
+
+                    <a class="dropdown-link" href="products.html">
+                        Tüm ürünler
+                    </a>
+                </div>
+            </div>
+
+            <a class="nav-link" data-section="contact" href="#contact">
+                İletişim
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-section page-section" id="home">
+            <div class="model-carousel" aria-label="Ayloy model galerisi" role="region">
+                <button class="model-arrow previous" type="button" aria-label="Önceki model" aria-controls="model-track"></button>
+                <div class="model-track" id="model-track" tabindex="0" role="group"
+                     aria-label="Modeller. Sol ve sağ oklarla gezinebilirsin."></div>
+                <button class="model-arrow next" type="button" aria-label="Sonraki model" aria-controls="model-track"></button>
+            </div>
+        </section>
+
+        <section class="purpose-section page-section" id="purpose">
+            <h1 class="section-title">Neden böyle bir işe giriştim?</h1>
+
+            <div class="purpose-story purpose-story-preview">
+                <div class="purpose-story-text">
+                    <p>Kendime kıyafet dikmeye başladım çünkü istediğim kalıpta ve bedende parçaları bulmakta zorlanıyordum. Bulduğumda da fiyatları bana gereksiz yüksek geliyordu. Kendi diktiğim kıyafetleri giymek zamanla keyif aldığım bir hobiye dönüştü. Birinin üzerinde beğendiğim bir parça görünce, “Acaba bunu kendi yorumumu katarak tasarlayıp dikebilir miyim?” diye düşünmeye başladım. Bu işi deneye yanıla, kendi kendime öğrenmek istiyorum. Satış yapmayı ya da seri üretime geçmeyi düşünmüyorum.</p>
+<p>Ayloy adı, Horizon Zero Dawn oyununun ana karakteri Aloy’dan geliyor. Oyunda karaktere seslenirken adını “Ay-loy” gibi söylüyorlardı. Bu söyleyiş hoşuma gitti, ben de Ayloy’u marka adı olarak kullanmak istedim.</p>
+<p class="purpose-teaser" aria-hidden="true">Malzemelerimi uygun fiyata bulduğum ikinci el kıyafetlerden sağlıyorum.</p>
+                </div>
+                <div class="purpose-photos purpose-photos-left"><div class="purpose-photo-pair"><img src="purpose-first-pants-front.jpg" alt="İlk pantolon denememin ön yüzü" width="1536" height="2048" loading="lazy" decoding="async"><img src="purpose-first-pants-detail.jpg" alt="İlk pantolonumun arka cebindeki Ayloy detayı" width="1536" height="2048" loading="lazy" decoding="async"></div></div>
+                <div class="purpose-photos purpose-photos-right"><img src="purpose-uniform-pants.jpg" alt="Dikiş makinesiyle genişlettiğim forma pantolonu" width="1536" height="2048" loading="lazy" decoding="async"></div>
+            </div>
+            <div class="purpose-disclosure">
+                <div class="purpose-expansion" id="purpose-expansion" inert>
+                    <div class="purpose-expansion-inner">
+                        <div class="purpose-story purpose-story-rest">
+                <div class="purpose-story-text">
+                    <p>Malzemelerimi uygun fiyata bulduğum ikinci el kıyafetlerden sağlıyorum. Beğendiğim bir parçayı, kumaşı ona uyan başka bir parçayla birleştirip istediğim gibi tek bir kıyafete dönüştürüyorum.</p>
+<p>İlk denemem can sıkıntısından çıktı. Bir gün eski bir kot pantolonumu, yine eski bir eşofmanımla elde dikerek birleştirdim. Sonuç hiç de fena olmadı. Biraz daha planlı çalışıp dikiş makinesi kullanırsam daha iyi sonuçlar alabileceğimi düşündüm ve basit bir makine aldım. Makineyle ilk işim, doktorların giydiği bir forma pantolonunu genişletmekti. Makineyi ilk kez kullanmama rağmen pantolonu üzerime ve istediğim tarza uydurmayı başardım.</p>
+<p>Yaptığım bazı parçaları giymek içimden gelmeyince dikiş konusunda daha çok şey öğrenmem gerektiğini fark ettim. Sosyal medyada dikiş ve kıyafet yapımıyla ilgili içerikleri izlemeye, gördüklerimden not almaya ve denemek istediğim projeleri araştırmaya başladım. Önce kot kumaşından bir kravat yaptım, ardından bir pantolonun paçasını daralttım. Sonra pantolon, gömlek ve sweatshirt gibi daha zor parçalara geçtim. İçime sinen işler de oldu, başarısız denemeler de. Zamanla dikiş makinesiyle kumaşa resim çizer gibi, nakışı andıran desenler yapmaya başladım. En çok tişörtlerde ilerledim. Şimdilerde çanta ve şapka yapmayı da deniyorum.</p>
+<p>Bu uğraşı sürdürüp kendimi geliştirmek, giyerken keyif aldığım parçalar üretmek ve fırsat olursa çevremdekiler için de bir şeyler dikmek istiyorum.</p>
+                </div>
+                <div class="purpose-photos purpose-photos-left"><img src="purpose-tie.jpg" alt="Kot kumaşından diktiğim kravat" width="1536" height="2048" loading="lazy" decoding="async"><img src="purpose-hoodie-set.jpg" alt="Ayloy kapüşonlu sweatshirt ve kot pantolon" loading="lazy" decoding="async"></div>
+                <div class="purpose-photos purpose-photos-right"><img src="purpose-ayloy-set.jpg" alt="Ayloy sweatshirt ve kot pantolon" width="2048" height="2048" loading="lazy" decoding="async"><img src="purpose-checked-shirt-set.jpg" alt="Ekose detaylı kot gömlek ve pantolon" loading="lazy" decoding="async"></div>
+            </div>
+                    </div>
+                </div>
+                <button class="purpose-toggle" type="button" aria-controls="purpose-expansion"
+                        aria-expanded="false" aria-label="Metnin devamını göster">
+                    <span class="purpose-disclosure-arrow" aria-hidden="true"></span>
+                </button>
+            </div>
+            <script>
+                (() => {
+                    const button = document.querySelector(".purpose-toggle");
+                    const expansion = document.getElementById("purpose-expansion");
+                    const section = button.closest(".purpose-section");
+                    button.addEventListener("click", () => {
+                        const opening = button.getAttribute("aria-expanded") === "false";
+                        button.setAttribute("aria-expanded", String(opening));
+                        button.setAttribute("aria-label", opening ? "Metnin devamını gizle" : "Metnin devamını göster");
+                        expansion.inert = !opening;
+                        section.classList.toggle("purpose-open", opening);
+                    });
+                })();
+            </script>
+        </section>
+
+        <section class="products-section page-section" id="products">
+            <h2 class="section-title"><button id="catalog-menu-toggle" type="button"
+                aria-controls="products-dropdown" aria-expanded="false">Tüm ürünler</button></h2>
+
+            <!-- Product cards are created in script.js. -->
+            <div class="product-grid" data-products="all"></div>
+        </section>
+    </main>
+
+    <!-- The shared contact section is created in script.js. -->
+    <footer class="contact-section page-section" id="contact"></footer>
+
+    <!-- Product information window -->
+    <dialog class="product-dialog" id="product-dialog"
+        aria-labelledby="product-title">
+        <button class="close-button" type="button"
+            data-close-product aria-label="Ürün penceresini kapat">
+            ×
+        </button>
+
+        <div class="product-dialog-layout">
+            <div class="product-gallery">
+                <button class="main-image-button" type="button"
+                    aria-label="Ürün fotoğrafını büyüt">
+                    <img id="product-main-image" src="" alt="">
+                    <span>Fotoğrafı büyüt</span>
+                </button>
+
+                <div class="thumbnail-list" id="product-thumbnails"></div>
+            </div>
+
+            <div class="product-information">
+                <h2 id="product-title"></h2>
+
+                <dl class="product-specifications">
+                    <div>
+                        <dt>Tür</dt>
+                        <dd id="product-type"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Materyal</dt>
+                        <dd id="product-material"></dd>
+                    </div>
+
+                    <div>
+                        <dt>Renk</dt>
+                        <dd id="product-color"></dd>
+                    </div>
+                </dl>
+
+                <p id="product-description"></p>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Enlarged photo window -->
+    <dialog class="image-dialog" id="image-dialog"
+        aria-label="Büyütülmüş ürün fotoğrafı">
+        <button class="close-button" type="button"
+            data-close-image aria-label="Büyütülmüş fotoğrafı kapat">
+            ×
+        </button>
+
+        <img id="enlarged-image" src="" alt="">
+    </dialog>
+
+</body>
+</html>

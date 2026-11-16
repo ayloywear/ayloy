@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üst Ürünler | ayloy</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="ayloy-favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="products.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body data-page="upper">
+
+    <!-- The shared navigation is created in script.js. -->
+    <header class="site-header" id="category-header"></header>
+
+    <main class="category-main">
+        <h1 class="page-title">Üst ürünler</h1>
+
+        <section class="category-section" id="jackets">
+            <h2 class="section-title">Ceket</h2>
+            <div class="product-grid" data-products="jacket"></div>
+        </section>
+
+        <section class="category-section" id="sweatshirts">
+            <h2 class="section-title">Sweatshirt</h2>
+            <div class="product-grid" data-products="sweatshirt"></div>
+        </section>
+
+        <section class="category-section" id="tshirts">
+            <h2 class="section-title">Tişört</h2>
+            <div class="product-grid" data-products="tshirt"></div>
+        </section>
+        <section class="category-section" id="shirts">
+            <h2 class="section-title">Gömlek</h2>
+            <div class="product-grid" data-products="shirt"></div>
+        </section>
+    </main>
+
+    <footer class="contact-section" id="contact"></footer>
+
+    <!-- Product windows are created in script.js on category pages. -->
+    <div id="dialog-container"></div>
+
+</body>
+</html>
