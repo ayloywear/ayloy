@@ -145,7 +145,7 @@ if (contactSection) {
     `;
 
     const contactItems = [
-        { icon: "ig.png", label: "Instagram", url: "https://www.instagram.com/ayloy" },
+        { icon: "ig.png", label: "Instagram", url: "https://www.instagram.com/_ayloy_" },
         { icon: "x.png", label: "X", url: "https://x.com/chaxinigg" },
         { icon: "m.png", label: "Gmail", url: "mailto:ayloywear@gmail.com" }
     ];
