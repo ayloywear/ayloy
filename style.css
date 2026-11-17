@@ -4,6 +4,8 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    /* Use the fallback font for Turkish letters missing from GoodDog. */
+    unicode-range: U+0000-00C6, U+00C8-00D5, U+00D7-00DB, U+00DD-00E6, U+00E8-00F5, U+00F7-00FB, U+00FD-011D, U+0120-012F, U+0132-015D, U+0160-10FFFF;
 }
 
 :root {
@@ -1032,6 +1034,8 @@ dialog::backdrop {
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+    /* Use the fallback font for Turkish letters missing from GoodDog. */
+    unicode-range: U+0000-00C6, U+00C8-00D5, U+00D7-00DB, U+00DD-00E6, U+00E8-00F5, U+00F7-00FB, U+00FD-011D, U+0120-012F, U+0132-015D, U+0160-10FFFF;
 }
 
 @media (max-width: 700px) {
