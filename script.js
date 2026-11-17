@@ -542,13 +542,19 @@ function setupModelCarousel() {
         return values[index] + (values[index + 1] - values[index]) * (distance - index);
     }
 
+    const compactCarousel = window.matchMedia("(max-width: 700px)");
+    const mobileOffsets = [0, 0.43, 0.73];
+    const mobileScales = [1, 0.43, 0.25];
+
     function render() {
+        const mobile = compactCarousel.matches;
+        const visibleDepth = mobile ? 2 : 4;
         const active = wrap(Math.round(position), count);
 
         slides.forEach(({ image, file }, index) => {
             const offset = wrap(index - position + count / 2, count) - count / 2;
             const depth = Math.abs(offset);
-            image.hidden = depth >= 4;
+            image.hidden = depth >= visibleDepth;
             image.setAttribute("aria-hidden", String(index !== active));
 
             if (depth < 5 && !image.hasAttribute("src")) {
@@ -556,10 +562,10 @@ function setupModelCarousel() {
             }
 
             if (image.hidden) return;
-            const x = Math.sign(offset) * interpolate(offsets, depth) * width;
+            const x = Math.sign(offset) * interpolate(mobile ? mobileOffsets : offsets, depth) * width;
             const y = -depth * (width < 700 ? 8 : 10);
-            const scale = interpolate(scales, depth);
-            image.style.opacity = Math.min(1, 4 - depth);
+            const scale = interpolate(mobile ? mobileScales : scales, depth);
+            image.style.opacity = Math.min(1, visibleDepth - depth);
             image.style.zIndex = 1000 - Math.round(depth * 100);
             image.style.transform =
                 `translate(-50%, -50%) translate(${x}px, ${y}px) scale(${scale})`;
