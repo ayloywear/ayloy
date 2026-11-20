@@ -400,6 +400,19 @@ const products = [
             "20261114_183407.jpg"
         ]
     },
+            {
+        "category": "accessory",
+        "name": "Koyu Kot Çanta",
+        "type": "Aksesuar",
+        "material": "Kot",
+        "color": "Lacivert, Mavi",
+        "description": "",
+        "images": [
+            "20261120_111947.jpg",
+            "20261120_111959.jpg",
+            "20261120_112054.jpg"
+        ]
+    },
     
     // Paste new products here.
 ];
